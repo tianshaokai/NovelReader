@@ -10,7 +10,6 @@ android {
         targetSdkVersion build_versions.target_sdk
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
     buildTypes {
@@ -23,7 +22,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    buildToolsVersion '26.0.2'
 }
 
 greendao{
@@ -40,9 +38,6 @@ repositories {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
 
     implementation deps.android.appcompat
     implementation deps.android.design
@@ -65,7 +60,6 @@ dependencies {
     /*implementation deps.glide.compiler*/
     //ORM Database
     implementation deps.greendao.runtime
-    testImplementation deps.testing.junit
 
     // Android Leak Analysis
     releaseImplementation deps.leakcanary.release

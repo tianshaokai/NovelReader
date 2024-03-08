@@ -1,7 +1,6 @@
 package com.example.newbiechen.ireader.ui.activity;
 
-import android.app.Activity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.newbiechen.ireader.R;
 import com.example.newbiechen.ireader.ui.base.BaseActivity;

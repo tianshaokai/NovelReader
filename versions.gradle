@@ -2,17 +2,15 @@ ext.deps = [:]
 
 // 版本号
 def versions = [:]
-versions.gradle = '3.6.1'
-versions.android = '28.0.0'
+versions.gradle = '4.2.1'
 versions.glide = '3.7.0'
 versions.rxjava2 = '2.2.19'
 versions.rxandroid = "2.1.1"
 versions.okhttp = '3.6.0'
 versions.retrofit = '2.7.2'
 versions.stetho = '1.5.1'
-versions.greendao = '3.2.2'
-versions.butterknife = '8.5.1'
-versions.junit = '4.13'
+versions.greendao = '3.3.0'
+versions.butterknife = '10.2.3'
 versions.leakcanary = '1.5.4'
 
 // 依赖
@@ -21,10 +19,10 @@ def deps = [:]
 // support
 def android =[:]
 android.plugin = "com.android.tools.build:gradle:$versions.gradle"
-android.appcompat = "com.android.support:appcompat-v7:$versions.android"
-android.design = "com.android.support:design:$versions.android"
-android.support = "com.android.support:support-v4:$versions.android"
-android.cardview = "com.android.support:cardview-v7:$versions.android"
+android.appcompat = 'androidx.appcompat:appcompat:1.0.0'
+android.design = 'com.google.android.material:material:1.0.0'
+android.support = 'androidx.legacy:legacy-support-v4:1.0.0'
+android.cardview = 'androidx.cardview:cardview:1.0.0'
 deps.android = android
 
 // butterknife
@@ -63,10 +61,6 @@ greendao.runtime = "org.greenrobot:greendao:$versions.greendao"
 greendao.plugin = "org.greenrobot:greendao-gradle-plugin:$versions.greendao"
 deps.greendao = greendao
 
-def testing = [:]
-testing.junit = "junit:junit:$versions.junit"
-deps.testing = testing
-
 // 测试相关
 def leakcanary = [:]
 leakcanary.release = "com.squareup.leakcanary:leakcanary-android-no-op:$versions.leakcanary"
@@ -77,7 +71,7 @@ ext.deps = deps
 
 def build_versions = [:]
 build_versions.min_sdk = 21
-build_versions.target_sdk = 28
-build_versions.tools_version = '28.0.0'
+build_versions.target_sdk = 30
+build_versions.tools_version = '30.0.0'
 
 ext.build_versions = build_versions

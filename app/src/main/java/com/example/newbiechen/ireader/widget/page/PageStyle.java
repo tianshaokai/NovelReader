@@ -1,6 +1,6 @@
 package com.example.newbiechen.ireader.widget.page;
 
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
 
 import com.example.newbiechen.ireader.R;
 

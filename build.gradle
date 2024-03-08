@@ -4,7 +4,9 @@ buildscript {
     apply from: 'versions.gradle'
     repositories {
         mavenCentral()
-        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
         google()
     }
     dependencies {
@@ -19,6 +21,9 @@ buildscript {
 allprojects {
     repositories {
         mavenCentral()
+        maven { url 'https://maven.aliyun.com/repository/google/' }
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter/' }
         google()
     }
 }

@@ -1,6 +1,6 @@
 package com.example.newbiechen.ireader.ui.adapter;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.newbiechen.ireader.model.bean.BookTagBean;
 import com.example.newbiechen.ireader.ui.adapter.view.TagChildHolder;

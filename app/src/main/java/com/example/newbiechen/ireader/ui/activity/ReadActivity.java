@@ -15,11 +15,11 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
 import android.provider.Settings;
-import android.support.design.widget.AppBarLayout;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.core.content.ContextCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -58,7 +58,7 @@ import java.util.List;
 import butterknife.BindView;
 import io.reactivex.disposables.Disposable;
 
-import static android.support.v4.view.ViewCompat.LAYER_TYPE_SOFTWARE;
+import static androidx.core.view.ViewCompat.LAYER_TYPE_SOFTWARE;
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
 

@@ -1,7 +1,7 @@
 package com.example.newbiechen.ireader.model.bean;
 
-import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.StringRes;
 
 import com.example.newbiechen.ireader.App;
 

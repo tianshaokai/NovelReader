@@ -1,7 +1,7 @@
 package com.example.newbiechen.ireader.ui.fragment;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.newbiechen.ireader.R;
 import com.example.newbiechen.ireader.RxBus;
